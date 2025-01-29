@@ -19,7 +19,7 @@ export async function authMiddleware(request: NextRequest) {
         }
     })
     if (!session) {
-        return NextResponse.redirect("/sign-in")
+        NextResponse.redirect(new URL("/sign-in", request.url));
     }
     return NextResponse.next();
 }
