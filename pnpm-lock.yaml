@@ -305,9 +305,6 @@ importers:
       '@trpc/server':
         specifier: 'catalog:'
         version: 11.0.0-rc.477
-      pg:
-        specifier: ^8.13.1
-        version: 8.13.1
       superjson:
         specifier: 2.2.1
         version: 2.2.1
@@ -5279,6 +5276,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -13676,7 +13674,8 @@ snapshots:
   pg-cloudflare@1.1.1:
     optional: true
 
-  pg-connection-string@2.7.0: {}
+  pg-connection-string@2.7.0:
+    optional: true
 
   pg-int8@1.0.1: {}
 
@@ -13685,6 +13684,7 @@ snapshots:
   pg-pool@3.7.0(pg@8.13.1):
     dependencies:
       pg: 8.13.1
+    optional: true
 
   pg-protocol@1.7.0: {}
 
@@ -13695,6 +13695,7 @@ snapshots:
       postgres-bytea: 1.0.0
       postgres-date: 1.0.7
       postgres-interval: 1.2.0
+    optional: true
 
   pg-types@4.0.2:
     dependencies:
@@ -13715,10 +13716,12 @@ snapshots:
       pgpass: 1.0.5
     optionalDependencies:
       pg-cloudflare: 1.1.1
+    optional: true
 
   pgpass@1.0.5:
     dependencies:
       split2: 4.2.0
+    optional: true
 
   picocolors@1.0.1: {}
 
@@ -13812,23 +13815,27 @@ snapshots:
       picocolors: 1.1.0
       source-map-js: 1.2.1
 
-  postgres-array@2.0.0: {}
+  postgres-array@2.0.0:
+    optional: true
 
   postgres-array@3.0.2: {}
 
-  postgres-bytea@1.0.0: {}
+  postgres-bytea@1.0.0:
+    optional: true
 
   postgres-bytea@3.0.0:
     dependencies:
       obuf: 1.1.2
 
-  postgres-date@1.0.7: {}
+  postgres-date@1.0.7:
+    optional: true
 
   postgres-date@2.1.0: {}
 
   postgres-interval@1.2.0:
     dependencies:
       xtend: 4.0.2
+    optional: true
 
   postgres-interval@3.0.0: {}
 
@@ -14543,7 +14550,8 @@ snapshots:
 
   split-on-first@1.1.0: {}
 
-  split2@4.2.0: {}
+  split2@4.2.0:
+    optional: true
 
   split@1.0.1:
     dependencies:
